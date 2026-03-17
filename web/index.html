@@ -1,23 +1,79 @@
 <head>
     <title>Example page</title>
     <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/utils/include.js"></script>
 </head>
 
-<body>
-    <p>Hello, world</p>
+<body class="dark">
+    <div id="page-header"></div>
 
-    <a href="register.html">Go to register.html</a>
+    <h2>Recent pictures</h2>
+    <a href="upload_picture.html">Upload a new picture</a>
+    <div class="gallery-container">
+        <!-- Our photo-blocks will be here -->
+        <div class="photo-block">
+            <div class="photo-header-block">
+              <h2 class="photo-title">Golden Sigma</h2>
+              <h3 class="photo-score">Score: 4.52</h3>
+            </div>
+          
+            <div class="photo-image-block">
+               <img class="photo-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZgD_t1zxXoIPj5SWsk5dwtHcfKyYpf-Bbg&s">
+            </div>
+          
+            <div class="photo-metadata-block">
+              <p class="photo-description">golden simga</p>
+            </div>
+          
+            <div class="photo-edit-block">
+              <button>Edit this photo</button>
+              <button>Delete this photo</button>
+            </div>
+        </div>
 
-    <p>My shopping list:</p>
+        <div class="photo-block">
+            <div class="photo-header-block">
+              <h2 class="photo-title">wega</h2>
+              <h3 class="photo-score">Score: 5.00</h3>
+            </div>
+          
+            <div class="photo-image-block">
+               <img class="photo-image" src="https://static.wikia.nocookie.net/joke-battles/images/6/65/Wega.png/revision/latest/scale-to-width-down/360?cb=20240617155810">
+            </div>
+          
+            <div class="photo-metadata-block">
+              <p class="photo-description">at least it is not maltigi.</p>
+            </div>
+          
+            <div class="photo-edit-block">
+              <button>Edit this photo</button>
+              <button>Delete this photo</button>
+            </div>
+        </div>
 
-    <ul>
-        <li>Oranges</li>
-        <li>Pears</li>
-        <li>Apples</li>
-    </ul>
+        <div class="photo-block">
+            <div class="photo-header-block">
+              <h2 class="photo-title">maltigi</h2>
+              <h3 class="photo-score">Score: 0.00</h3>
+            </div>
+          
+            <div class="photo-image-block">
+               <img class="photo-image" src="https://i1.sndcdn.com/artworks-zq6KDlwYKW5M8oGl-Hzqzcw-t1080x1080.jpg">
+            </div>
+          
+            <div class="photo-metadata-block">
+              <p class="photo-description">AAAAAAHHHHH!!!! ! !!</p>
+            </div>
+          
+            <div class="photo-edit-block">
+              <button>Edit this photo</button>
+              <button>Delete this photo</button>
+            </div>
+        </div>
+    </div>
 
-    <img src="/images/placeholder-img.jpg"
-        title="Two dogs"
-        alt="Two dogs rest in a grass field">
-
+    <script>
+        include("header.html", "#page-header");
+    </script>
 </body>
